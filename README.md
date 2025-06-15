@@ -30,9 +30,7 @@ A beautiful, modern Pomodoro timer webapp with dark/light themes, chiptune audio
 - Multi-tone completion melodies
 - All sounds are generated using Web Audio API
 
-## 🚀 Live Demo
 
-[View Live Demo](https://yourusername.github.io/repository-name)
 
 ## 📱 Usage
 
