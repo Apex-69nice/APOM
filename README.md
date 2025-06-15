@@ -1,6 +1,6 @@
 # APOM
 a minimal pomodoro timer and no caps 
-# 🍅 Anoter Pomodoro Timer
+# 🍅 Another Pomodoro Timer
 
 A beautiful, modern Pomodoro timer webapp with dark/light themes, chiptune audio effects, and clean animations.
 
