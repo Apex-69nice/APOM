@@ -519,6 +519,8 @@
                 this.workTime = 25 * 60; // 25 minutes in seconds
                 this.breakTime = 5 * 60; // 5 minutes in seconds
                 this.longBreakTime = 15 * 60; // 15 minutes in seconds
+                this.AbitofahogsessionTime= 45 *60; //45 minutes in seconds
+    
                 this.currentTime = this.workTime;
                 this.isRunning = false;
                 this.isWorkSession = true;
@@ -565,7 +567,7 @@
             }
 
             playCompletionSound() {
-                // Multi-tone completion sound
+                
                 setTimeout(() => this.playChiptuneSound(800, 150, 'triangle'), 0);
                 setTimeout(() => this.playChiptuneSound(1000, 150, 'triangle'), 100);
                 setTimeout(() => this.playChiptuneSound(1200, 200, 'triangle'), 200);
@@ -687,10 +689,10 @@
             }
         }
 
-        // Initialize timer
+        
         const pomodoro = new PomodoroTimer();
 
-        // Global functions for HTML onclick handlers
+        
         function toggleTimer() {
             pomodoro.toggle();
         }
@@ -709,11 +711,11 @@
             const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
             body.setAttribute('data-theme', newTheme);
             
-            // Play theme toggle sound
+            
             pomodoro.playChiptuneSound(600, 120, 'sine');
         }
 
-        // Keyboard shortcuts
+        
         document.addEventListener('keydown', (e) => {
             switch(e.code) {
                 case 'Space':
@@ -732,7 +734,7 @@
             }
         });
 
-        // Enhanced button interactions
+        
         document.querySelectorAll('.btn').forEach(btn => {
             btn.addEventListener('mouseenter', () => {
                 if (pomodoro.audioContext) {
@@ -741,7 +743,7 @@
             });
         });
 
-        // Spotify button interaction
+        
         document.querySelector('.spotify-btn').addEventListener('mouseenter', () => {
             if (pomodoro.audioContext) {
                 pomodoro.playChiptuneSound(500, 40, 'sine');
